@@ -8,5 +8,5 @@ server {
   access_log            <%= scope.lookupvar('nginx::params::nx_logdir')%>/<%= name %>.access.log;
 
   <% if (defined? rewrite) %>
-  rewrite <%= rewrite %>
+  rewrite <%= rewrite %>;
  <% end %>
